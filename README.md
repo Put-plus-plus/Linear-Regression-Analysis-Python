@@ -13,6 +13,6 @@ The `DataPrep` class has a `merging_fun()` method for turning wide data long, a 
 Flashcards() #replace this 
 # OUTPUT: something
 ```
-
+ 
 ## Animation - Liver Disease Analysis Example
 remember to add the link to the GIF, which I must also make sure to add to the repo, see stackoverflow - maybe show the output the CSV files  
