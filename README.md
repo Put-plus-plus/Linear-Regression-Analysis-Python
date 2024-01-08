@@ -15,4 +15,4 @@ Flashcards() #replace this
 ```
 
 ## Animation - Liver Disease Analysis Example
-remember to add the link to the GIF, which I must also make sure to add to the repo, see stackoverflow - maybe show the output the CSV files 
+remember to add the link to the GIF, which I must also make sure to add to the repo, see stackoverflow - maybe show the output the CSV files  
