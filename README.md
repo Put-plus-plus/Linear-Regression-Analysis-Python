@@ -1,7 +1,7 @@
 ## Description 
-Regression analysis is a set of statistical processes for estimating the relationship between a dependent variable and independent variables. Here the user can X Every thinkable model, might want to discus the models, from a biological significance point of view, perhaps without rationella. Gets you a csv with every model for discussion. An opportunity to try out multiprocessing – what learned.
+Regression analysis is a set of statistical processes for estimating the relationship between a dependent variable and independent variables. Here the user can X different convidence intervals An opportunity to try out multiprocessing – what learned.
 
-The `DataPrep` class has a `merging_fun()` method for turning wide data long, a `cleaning_fun()` method for removing values that sit outside of permitted boundaries, and a `data_check_fun()` method for visually inspecting the data by generating histograms of all variables. The `RegressionModel` class has a `variable_preparation()` method for generating a powerset from the variables, and a `multip_best_regression_model()` method for generating regression models from powerset and storing summaries of the models in a csv file. The method for generating regression models is used in multiprocessing. 
+The `DataPrep` class has a `merging_fun()` method for turning wide data long, a `cleaning_fun()` method for removing values that sit outside of permitted boundaries, and a `data_check_fun()` method for visually inspecting the data by generating histograms of all variables. The `RegressionModel` class has a `variable_preparation()` method for generating a powerset from the variables, and a `multip_best_regression_model()` method for generating regression models from  and storing summaries of the models in a. The method for generating regression models is used in. 
 
 ## Dependencies
 * Microsoft Windows version 10.0.19045
