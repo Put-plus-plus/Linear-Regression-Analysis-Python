@@ -3,6 +3,11 @@ The `RegressionAnalysis` class in the `regressionanalysis.py` module has five me
 
 THE DATA in the regression_data.csv file is from (GET REFERENCE), has been modified to introduce wide and incorrect values to illustrate clean up.
 
+ 
+Lichtinghagen,Ralf, Klawonn,Frank, and Hoffmann,Georg. (2020). HCV data. UCI Machine Learning Repository. https://doi.org/10.24432/C5D612.
+
+
+
 ## Dependencies
 * Microsoft Windows 10.0.19045
 * Python 3.9.1
