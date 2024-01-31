@@ -8,10 +8,36 @@ The `DataPrep` class has a `merging_fun()` method for turning wide data long, a 
 * Python version 3.9.1
 * Numpy 1.22.2, Pandas 1.2.2, Statsmodels 0.14.1, Re ????, Seaborn 0.11.1, Matplotlib 3.3.4, Itertools ????, Time ???, Multiprocessing ???, Threading ???, Random 
 
-## Execution - Liver Disease Analysis Example
+## Execution - liver disease example
 ```python
-Flashcards() #replace this 
-# OUTPUT: something
+import numpy as np
+import pandas as pd
+import re
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+import statsmodels.formula.api as smf
+import time
+
+liver_df_wide = pd.read_csv('C:\\Users\\User\\Desktop\\regression_data.csv')          
+liver_analysis = RegressionAnalysis(liver_df_wide)
+
+liver_analysis.format_data()
+
+liver_allowed_dict = {'ALB':[10.0, 100.0], 'ALP':[10.0, 450.0], 'ALT':[0.5, 350.0],
+                'AST':[10.0, 350.0], 'BIL':[0.5, 300.0], 'CHE':[1.0, 20.0],
+                'CHOL':[1.0, 10.0], 'CREA':[5.0, 1200.0], 'GGT':[1.0, 700.0],
+                'PROT':[40.0, 100.0]}
+liver_analysis.clean_data(liver_allowed_dict)
+
+liver_pdf_path = 'C:\\Users\\User\\Desktop'                     
+liver_analysis.inspect_data(liver_pdf_path)
+
+liver_dependent_var = 'PROT'                                                   
+liver_analysis.fit_reg_model(liver_dependent_var)
+
+liver_ci_list = [0.1, 0.075, 0.05, 0.03, 0.01]                                  
+liver_summaries_path = 'C:\\Users\\User\\Desktop'                                 
+liver_analysis.create_summaries(liver_ci_list, liver_summaries_path)
 ```
  
 ## Animation - Liver Disease Analysis Example
