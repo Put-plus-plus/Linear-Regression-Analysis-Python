@@ -10,14 +10,6 @@ The `DataPrep` class has a `merging_fun()` method for turning wide data long, a 
 
 ## Execution - liver disease example
 ```python
-import numpy as np
-import pandas as pd
-import re
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_pdf import PdfPages
-import statsmodels.formula.api as smf
-import time
-
 liver_df_wide = pd.read_csv('C:\\Users\\User\\Desktop\\regression_data.csv')          
 liver_analysis = RegressionAnalysis(liver_df_wide)
 
