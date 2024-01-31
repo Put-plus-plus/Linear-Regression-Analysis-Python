@@ -8,28 +8,28 @@ The `DataPrep` class has a `merging_fun()` method for turning wide data long, a 
 * Python version 3.9.1
 * numpy 1.22.2, pandas 1.2.2, re 2.2.1, matplotlib 3.3.4, statsmodels 0.14.1, time (built-in module) 
 
-## Execution - liver disease example
+## Execution - blood panel example
 ```python
-liver_df_wide = pd.read_csv('C:\\Users\\User\\Desktop\\regression_data.csv')          
-liver_analysis = RegressionAnalysis(liver_df_wide)
+blood_df_wide = pd.read_csv('C:\\Users\\User\\Desktop\\regression_data.csv')          
+blood = RegressionAnalysis(blood_df_wide)  
 
-liver_analysis.format_data()
+blood.format_data()
 
-liver_allowed_dict = {'ALB':[10.0, 100.0], 'ALP':[10.0, 450.0], 'ALT':[0.5, 350.0],
+blood_allowed_dict = {'ALB':[10.0, 100.0], 'ALP':[10.0, 450.0], 'ALT':[0.5, 350.0],
                 'AST':[10.0, 350.0], 'BIL':[0.5, 300.0], 'CHE':[1.0, 20.0],
                 'CHOL':[1.0, 10.0], 'CREA':[5.0, 1200.0], 'GGT':[1.0, 700.0],
                 'PROT':[40.0, 100.0]}
-liver_analysis.clean_data(liver_allowed_dict)
+blood.clean_data(blood_allowed_dict)
 
-liver_pdf_path = 'C:\\Users\\User\\Desktop'                     
-liver_analysis.inspect_data(liver_pdf_path)
+blood_pdf_path = 'C:\\Users\\User\\Desktop'                     
+blood.inspect_data(blood_pdf_path)
 
-liver_dependent_var = 'PROT'                                                   
-liver_analysis.fit_reg_model(liver_dependent_var)
+blood_dependent_var = 'PROT'                                                   
+blood.fit_reg_model(blood_dependent_var)
 
-liver_ci_list = [0.1, 0.075, 0.05, 0.03, 0.01]                                  
-liver_summaries_path = 'C:\\Users\\User\\Desktop'                                 
-liver_analysis.create_summaries(liver_ci_list, liver_summaries_path)
+blood_ci_list = [0.1, 0.075, 0.05, 0.03, 0.01]                                  
+blood_summaries_path = 'C:\\Users\\User\\Desktop'                                 
+blood.create_summaries(blood_ci_list, blood_summaries_path)
 ```
  
 ## Animation - Liver Disease Analysis Example
