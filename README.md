@@ -6,7 +6,7 @@ The `DataPrep` class has a `merging_fun()` method for turning wide data long, a 
 ## Dependencies
 * Microsoft Windows version 10.0.19045
 * Python version 3.9.1
-* Numpy 1.22.2, Pandas 1.2.2, Statsmodels 0.14.1, Re ????, Seaborn 0.11.1, Matplotlib 3.3.4, Itertools ????, Time ???, Multiprocessing ???, Threading ???, Random 
+* numpy 1.22.2, pandas 1.2.2, re 2.2.1, matplotlib 3.3.4, statsmodels 0.14.1, time (built-in module) 
 
 ## Execution - liver disease example
 ```python
