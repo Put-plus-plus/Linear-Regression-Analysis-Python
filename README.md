@@ -10,6 +10,8 @@ The `DataPrep` class has a `merging_fun()` method for turning wide data long, a 
 
 ## Execution - blood panel example
 ```python
+from regressionanalysis import *
+
 blood_df_wide = pd.read_csv('C:\\Users\\User\\Desktop\\regression_data.csv')          
 blood = RegressionAnalysis(blood_df_wide)  
 
