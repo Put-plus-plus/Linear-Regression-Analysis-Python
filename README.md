@@ -1,6 +1,8 @@
 ## Description 
 The `RegressionAnalysis` class in the `regressionanalysis.py` module has five methods. These methods prepare data for analysis, fit a linear regression model to data, and produce output summaries for the linear regression model using different confidence intervals. The `format_data()` method creats a dataframe with long data (eg var1, var2) from a dataframe with wide data (eg var1_1, var1_2, var2_1, var2_2, var2_3). The `clean_data()` method accepts a dictionary with allowed variable value ranges (eg `{'var1':[4, 8]}`) and filters a dataframe with float data so to create a dataframe with complete data with allowed values only. The `inspect_data()` method accepts a string with the path to the desired location of a pdf, which is created and contains historgrams for all variables in the unity and the clean dataframes. The `fit_reg_model()` method accepts a string with the desired dependent variable, and fits a regression model using all the independent variables variables in the clean dataframe. The `create_summaries()` method accepts a list with floats representing desired confidence intervals (eg [0.1, 0.5, 0.01], the 90%, 95%, and 99% CI respectively), and a string with the path to the desired location where the regression model summmaries are to be created as csv files. 
 
+THE DATA in the regression_data.csv file is from (GET REFERENCE), has been modified to introduce wide and incorrect values to illustrate clean up.
+
 ## Dependencies
 * Microsoft Windows 10.0.19045
 * Python 3.9.1
