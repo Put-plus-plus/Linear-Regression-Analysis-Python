@@ -33,6 +33,4 @@ blood_ci_list = [0.1, 0.075, 0.05, 0.03, 0.01]
 blood_summaries_path = 'C:\\Users\\User\\Desktop'                                 
 blood.create_summaries(blood_ci_list, blood_summaries_path)
 ```
- 
-## Animation - blood panel example
-remember to add the link to the GIF, which I must also make sure to add to the repo, see stackoverflow - maybe show the output the CSV files  
+
