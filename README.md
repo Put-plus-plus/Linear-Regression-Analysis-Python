@@ -9,7 +9,7 @@ The dataset (`regression_data.csv`) used in the example below is an adapted vers
 * Python 3.9.1
 * numpy 1.22.2, pandas 1.2.2, re 2.2.1, matplotlib 3.3.4, statsmodels 0.14.1, time (built-in module) 
 
-## Execution - blood panel example
+## Execution - regression analysis example
 ```python
 from regressionanalysis import *
 
